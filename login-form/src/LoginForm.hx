@@ -24,10 +24,10 @@ class LoginForm extends View {
 		return hxx('
 		<LayoutGroup layout=${layout}>
 			<Label text="User Name"/>
-			<TextInput text={userName} onChange={userName = cast(cast(event, Event).currentTarget, TextInput).text}/>
+			<TextInput text=${userName} onChange=${userName = cast(event.currentTarget, TextInput).text}/>
 			<Label text="Password"/>
-			<TextInput text={password} displayAsPassword={true} onChange={password = cast(cast(event, Event).currentTarget, TextInput).text}/>
-			<Button text="Login" onClick={submitButton_onTrigger(cast event)}/>
+			<TextInput text=${password} displayAsPassword=${true} onChange=${password = cast(event.currentTarget, TextInput).text}/>
+			<Button text="Login" onClick=${submitButton_onTrigger(cast event)}/>
 		</LayoutGroup>
 		');
 	}

@@ -16,7 +16,7 @@ class Main extends Application {
 				ref=${button -> this.button = button}
 				text="Click Me"
 				layoutData=${AnchorLayoutData.center()}
-				onTrigger={button_triggerHandler(cast event)}/>');
+				onTrigger=${button_triggerHandler(event)}/>');
 	}
 
 	// store the button so that we can refer to it in other functions
